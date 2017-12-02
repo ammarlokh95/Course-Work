@@ -1,0 +1,53 @@
+Lab 2
+
+Q1.
+./CS265/L2/eg.bash
+./CS265/L2/args.bash
+./CS265/L2/getopts.bash
+./.xsession-errors.old
+./.xsession-errors
+./.viminfo
+./tmp/gotMe.bash
+
+./.lesshst
+
+Q2. 
+find *.bash
+
+Q3.
+./CS265/L1/hello.bash
+./CS265/L2/eg.bash
+./CS265/L2/args.bash
+./CS265/L2/getopts.bash
+./tmp/gotMe.bash
+
+Q4.
+73  421 2538 breadIsDangerous.txt
+
+Q5.
+grep "the" breadIsDangerous.txt | wc -l
+
+Q6.
+A new file called spellExample.bak is created with the original incorrect
+words of spellExample and the incorrect spellings of spellExample were
+corrected.
+
+Q7
+It returns the sentences which have a difference in the two files.
+
+3c3
+< bunch of my old friends did something
+---
+> bnuch of my old freinds did somehting
+6d5
+< An extra lin
+
+Q8.
+No output as the files were exactly the same.
+
+Q9
+echo $? displays the exit status of the most recently called command.
+Its 0 for the first grep call and 1 for the second call as grep returns an
+exit status of 0 if true and 1 if false.
+if grep encounters an error (such as file not found for the third call) it
+returns 2. Hence, the echo $? returns 2 after the third call.

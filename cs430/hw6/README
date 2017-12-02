@@ -1,0 +1,29 @@
+AMMAR LOKHANDWALA
+
+cs430
+Assignment 5
+
+The program transforms the polygon by scaling/rotating/translating it. 
+
+The function names should be self explanatory.
+
+Function transformPolygon() uses the provided command line operator arguments to transform the polygon.
+clipPolygon() takes four values which correspond to the world view bounds provided.
+
+My clip function does not draw the line at x=min (0) and so my fill function gives a weird output. 
+I've provided Make commands and an extra script (reuntests_nofill.sh) to display the output without by drawing the polygon lines instead
+
+Compile:
+	g++ STD=c++11 -o hw4 hw4.cpp
+
+Run: 
+
+	./hw5 -f [FILENAME] ... (other commands)
+
+
+A make file is included with the following functions:
+compile : compiles the program
+run : runs the runtests.sh script
+run_nofill : runts the runtests_nofill.sh script (same as runtests.sh but with an added command to switch from fill to draw)
+all : compiles and runs both the runtests.sh and reuntests_nofill.sh test scripts.
+clean : deletes all .xpm files in the current folder

@@ -1,0 +1,12 @@
+#!/bin/bash
+#a1-top
+
+if  [ $1>0 ] ; then
+   cd $1 
+fi
+
+for file in $(find . -type d); do
+ ./dir.bash $file > $file/dir.xml;
+done
+
+

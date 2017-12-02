@@ -1,0 +1,76 @@
+Q1. add() adds a word to the suffix list and updates the prefix while,
+addSuffix() adds to state list.
+
+Q2. lookup() searched for a prefix and creates one if required. It returns
+a pointer to the prefix found or created, otherise it returns NULL. The
+add() fuction uses it. 
+
+Q3. 
+
++==============+============+
+|(NULL)(NULL)  |  It's      |
++==============+============+
+|(NULL) It's   |  a         |
++==============+============+
+| It's a       | new        |
++==============+============+
+| a new        | dawn       |
++==============+============+
+| new dawn     | (NULL)     |
++==============+============+
+
+1 pointer to each.
+
+Q4. The code is a lot faster than most other implemntations and does not
+import a lot of built-in libraries
+
+Q5. The code is a lot longer and messier to follow.
+
+
+Q6. 
+void cleanup()
+{
+	State *Temp1,*sp;
+	Suffix *temp2, **temp3;
+	
+	for(int h=0; h<NHASH; h++)
+	{
+		for(sp=statetab[h]; sp != NULL; sp = sp->next)
+		{
+			for(temp3 = &sp->suf; *temp3; *temp3 = temp2)
+			{
+				temp2 = (*temp3)->next;
+				free(temp3);
+			}
+		}
+	}
+}
+
+Q7. yes. I found it hard to delete the nodes of the suffix list.
+
+Q8. 
+   
+Q9. prefixes are stored in a double ended queue. We dont use vectors as we
+can insert into the front and back and pop from the front and back more
+efficiently using deque.
+
+Q10. map
+
+Q11. Stored as string vectors.
+
+Q12. We use pre defined data structures defined in the c++ libraries and so
+do not need to define our own data structures. Shorter code.
+
+Q13. Longer to run	
+
+Q14. Prefixes are stored as string tuples as the Key to the dictionary.
+
+Q15. A dictionary called table
+
+Q16. Saved as a list whic is the data of the dictomary for each key.
+
+Q17. Python code is Clearer and easier to understand than C++. Dont need to import many
+built-in libraries which gives more control over performance. Shorter code.
+
+Q18. Takes longer to run.
+

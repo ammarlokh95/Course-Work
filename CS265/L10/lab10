@@ -1,0 +1,41 @@
+Q1
+=====================================================
+|   n    |  T(n)  |____________T(n)/f(n)____________|
+|        |        | f(n)=n | f(n)=nln(n) | f(n)=n^2)|
+|========+========+========+=============+==========|
+|  10    |  2184  |  218.4 |   94.84991  |    21.84 |
+|  20    |  4716  |  235.8 |   78.71197  |    11.79 |
+|  30    |  7467  |  248.9 |   73.18011  | 8.296667 |
+|  40    | 10184  |  254.6 |   69.01825  |    6.365 |
+|  50    | 13066  | 261.32 |   66.79920  |   5.2264 |
+|  60    | 15910  | 265.16 |   64.76413  | 4.419444 |
+=====================================================
+
+T(n) is increasing. So, it is loosely bounded below by a constant. So, T(n)=omega(1).
+when we divide T(n) by f(n)=nln(n), we see that the values tend towards some non
+zero constant. So, T(n)=theta(nln(n)).
+When we choose f(n)=(n^2), we see T(n)/(f(n) is probably decreasing to 0.
+This means n^2 is an loose upper bound. So, T(n)=o(n^2)
+
+Q2.
+=========================================================
+|  n   |    T(n)   |_____________T(n)/f(n________________|
+|      |           | f(n)=n  | f(n)=nln(n) |   f(n)=n^2  |
+|======|===========+=========+=============+=============|
+|  10  |  45721062 | 4572106 |   1985640   |  457210.6   |
+|  20  |  98107982 | 4905399 |   1637462   |  245270.0   |
+|  30  | 153522280 | 5117409 |   1504591   |  170580.3   |
+|  40  | 210173451 | 5254336 |   1424372   |  131358.4   |
+|  50  | 265180908 | 5303618 |   1355723   |  106072.4   |
+|  60  | 319847373 | 5330790 |   1301989   |   88846.4   |
+==========================================================
+
+Similar to the time values, T(n) is increasing, the values tend towards a
+constant non zero value for f(n)=nln(n) and the values decrease exponentially
+towards zero when f(n)=n^2.
+
+We can conclude that the time is proportional to the function which is
+called the most number of times.
+|
+|
+

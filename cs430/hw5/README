@@ -1,0 +1,32 @@
+AMMAR LOKHANDWALA
+
+cs430
+
+
+Assignment 4
+The program works using the scan filling algorithm to fill polygons.
+
+The function names should be self explanatory.
+two new functions are add: fillPolygon and switchFlag.
+fillPolygon gills the most recently drawn polygon with black (represented by +) in the xpm file.
+switchFlag is a helper function to switch the parity-bit.
+
+All of the sample files working perfectly.
+
+NOTE: the file hw4_9.ps was causing a lot of issues due to the sudden change of formatting, so I edited it to make it
+compatible with my code, because I didn't have enough time and will to deal with it then.
+
+
+Compile:
+	
+	g++ STD=c++11 -o hw4 hw4.cpp
+
+Run: 
+	
+	./hw4 -f [FILENAME]
+
+
+A make file is included with the following functions:
+compile : compiles the program
+run<n> : runs the program taking hw4_<n>.ps as command line argument (note: <n> should be replaced with 1,2,3,4,5,6,7,8,9)
+all : compiles and runs the program once for all of the different test files. 

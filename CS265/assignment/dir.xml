@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direntry>
+	<index>
+		<file>file1</file>
+		<file>file2</file>
+		<file>file3</file>
+	</index>
+	<required>
+		<file>1</file>
+		<file>2</file>
+		<file>3</file>
+	</required>
+	<other>
+		<dir>t1</dir>
+		<dir>t2</dir>
+		<file>---<file>
+		<file>+++<file>
+		<file>@@<file>
+		<file>-file1<file>
+		<file>-file2<file>
+		<file>-file3<file>
+		<file>-1<file>
+		<file>-2<file>
+		<file>-3<file>
+		<file>+0<file>
+		<file>+a1-top*<file>
+		<file>+dir.bash*<file>
+		<file>+dir.xml<file>
+		<file>+readme<file>
+		<file>+README<file>
+		<file>+temp3<file>
+	</other>
+</direntry>
+</xml>

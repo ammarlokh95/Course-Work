@@ -1,0 +1,85 @@
+1.1
+TRUE should be ! and false should be 0, as that is the convention.
+
+1.2
+int issmaller(char *s, char *t) {
+	if (strcmp(s, t) < 1) 
+		return 1; 
+	else 
+		return 0; 
+}
+
+1.3
+not possible.
+
+1.4
+if ( c != 'y' && c != 'Y')
+	return;
+
+if ( length > BUFSIZE)
+	lenghth = BUFSIZE;
+
+flag = 0;
+
+if ( *line == '"' )
+	quote = 1;
+else 
+	quote = 0;
+
+if (val)
+	bit=1;
+else 
+	bit =0;
+
+1.5
+the return type is int but the fuctions returns *int.
+
+1.6
+output:2 1
+
+1.7
+if (istty(stdin)) ; 
+else if (istty(stdout)) ; 
+else if (istty(stderr)) ; 
+else 
+	return(0) ; 
+
+if (retval != SUCCESS) 
+	return  (retval); 
+ /a A11 went well ! a/ 
+else
+	return (SUCCESS);
+
+(or the whole code above can just simplify to "return (retval)")
+
+for (k = 0; k < 5; k++) { 
+	scanf ("%lf" , &dx) ; 
+	x += dx;
+}
+
+1.8
+for ( count=0; count<total; count++) {
+	if (this.getName(count) == nametable.username()) {
+		return (true);
+	}
+}
+
+1.9 the entire macros body should be within a bracket
+#define ISDIGIT(c) (((c >= 0) && (c <= 9)) ? 1:0)
+
+1.10
+ 
+#define FTTOMETER   0.3048 
+#define METERTOFT 3.28084 
+#define MITOFT 5280.0 
+#define MITOKM 1.609344 
+#define SQMITOSQKM 2.589988 
+
+1.11 
+1. comment is fine but function name is not accurate. Nothing is being
+inserted.
+2. the if check is checking for odd values of 'n' not even. Though the event
+numbers are a consequence, so, not wrong. 
+3. the comments in the function body are unnecessary as the commands are
+clear.
+

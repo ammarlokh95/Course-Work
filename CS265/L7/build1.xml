@@ -1,0 +1,25 @@
+<project default="compile">
+
+    <target name="compile">
+        <javac srcdir="." destdir="." includeantruntime="false"/>
+    </target>
+
+    <target name="run" depends="compile">
+        <property name="arg" value="Justin"/>
+        <java classname="Hello">
+            <classpath>
+                <pathelement path="."/>
+            </classpath>
+            <arg value="${arg}"/>
+        </java>
+    </target>
+
+    <target name="clean">
+        <delete>
+            <fileset dir=".">
+                <include name="*.class"/>
+            </fileset>
+        </delete>
+    </target>
+
+</project>

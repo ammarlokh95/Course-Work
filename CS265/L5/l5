@@ -1,0 +1,99 @@
+Q 1. 
+i. List: it is a sequence of elements that are linked to each other by
+pointers and space is allocated to each element.
+ii. Stack: It inserts and pops out elements on a last in first out basis.
+That is, the last element to be added is the first element to be displayed
+and deleted(i.e. popped out). it also checks for empty stack.
+iii. Queue: It inserts and pops out elements  on a first in first out basis.
+That is, the first element to be added will be the first to be displayed and
+deleted. it also checks for empty queue.
+iv. Dictionary: Associates the data of an element with a corresponding key
+to identify it. It is used to effeciently find, insert and remove elements.
+
+Q 2.
+For an array of size n, The search would take at most ln(n) time to complete the search. As with
+each iteration binary search will divide the array into 2 halves. This is
+possible to do a maximum of ln(n) times until we reach a single element.
+(ie. the height of the binary tree formed by the binary search algorithm
+will be ln(n)).
+
+Q 3.
+Linear search will take at most n time to search for the element as it would
+have to compare the data with each element of the array. Hence, it would
+have to make n comparisons.
+
+Q 4.
+Linear search would be preferable over binary search for searching within a
+linked-list as the time taken to traverse the list will increase the time taken to
+search the list using binary search. 
+Linear search is also preferrend if an unsorted array is to be searched only
+once, which will be faster than sorting it first and then running the binary
+search in most case.
+
+Q 5. 
+"| |"= indicates sub aray
+
+*84* 37 93 82 98 27 63 73 93 27 75 55 45 8
+
+*8* 37 82 27 63 73 27 75 55 45| 84 | *93* 93 98
+
+8| *37* 82 27 63 73 27 75 55 45| 84 |93| *93* 98
+
+8| 27| *82* 37 63 73 27 75 55 45 |84 |93| 93| *98*
+
+8| 27| *45* 37 63 73 27 75 55 |82 |84 |93 |93 |98
+
+8| 27| *27* 37 |45| *73* 63 75 55 |82 |84 |93 |93 |98
+
+8 |27 |27| *37*| 45 | *55* 63| 73| *75* | 82| 84 |93 |93 |98
+
+8 | 27 | 27 | 37 | 45 | 55 | *63* | 73 | 75 | 82 |84 | 93 | 98
+
+8 | 27 | 27 | 37 | 45 | 55 | 63 | 73 | 75 | 82 | 84 | 93 | 98 
+
+8 27 27 37 45 55 63 73 75 82 84 93 98
+
+Q 6.
+the list is: 
+("3")->("24")->("6")->(NULL)
+or "3","24","6"
+
+Q 7.
+L = [13, [28, [24, [3, None]]]]
+
+Q 8.
+this is because in the first case s is directly pointing to the location of character
+array buffer. So all the changes made to s are reflected onto buffer as they
+are practically the same array with differnt names.
+In the second case, however, the contents of char array buffer are simply copied
+into the char pointer s which points to a differnt location.
+
+Q 9.
+table:
+[0]= (NULL)
+[1]= (NULL)
+[2]= (NULL)
+[3]= ("Bob", 38)->("Cos",86)->(NULL)
+[4]= ("Vera", 99)->("Nash", 11)->("kate", 28)->("Jaga",24)->(NULL)
+[5]= ("Jesse", 78)-> (NULL)
+[6]= (NULL)
+
+Q 10.
+
+int find( char *key, int *p_ans)
+{
+   int h = hash( key );
+   entry *t=NULL;
+   t=table[h];
+   while (t != NULL)
+   {
+      if (strcmp(t->key, key)==0)
+      {
+         *p_ans= t->val;
+         return 1;
+      }
+      t=t->next;
+   }
+   return 0;
+}
+

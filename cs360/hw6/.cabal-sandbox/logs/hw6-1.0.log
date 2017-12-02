@@ -1,0 +1,23 @@
+Configuring hw6-1.0...
+Building hw6-1.0...
+Preprocessing executable 'test' for hw6-1.0...
+[3 of 6] Compiling Interpreter      ( src/Interpreter.hs, dist/dist-sandbox-f62dae5b/build/test/test-tmp/Interpreter.o )
+[4 of 6] Compiling MonadicInterpreter ( src/MonadicInterpreter.hs, dist/dist-sandbox-f62dae5b/build/test/test-tmp/MonadicInterpreter.o )
+
+src/MonadicInterpreter.hs:126:83: Warning:
+    Defined but not used: ‘y’
+[5 of 6] Compiling OutputInterpreter ( src/OutputInterpreter.hs, dist/dist-sandbox-f62dae5b/build/test/test-tmp/OutputInterpreter.o )
+
+src/OutputInterpreter.hs:109:83: Warning: Defined but not used: ‘y’
+Linking dist/dist-sandbox-f62dae5b/build/test/test ...
+Preprocessing executable 'while' for hw6-1.0...
+[3 of 6] Compiling Interpreter      ( src/Interpreter.hs, dist/dist-sandbox-f62dae5b/build/while/while-tmp/Interpreter.o )
+[4 of 6] Compiling MonadicInterpreter ( src/MonadicInterpreter.hs, dist/dist-sandbox-f62dae5b/build/while/while-tmp/MonadicInterpreter.o )
+
+src/MonadicInterpreter.hs:126:83: Warning:
+    Defined but not used: ‘y’
+[5 of 6] Compiling OutputInterpreter ( src/OutputInterpreter.hs, dist/dist-sandbox-f62dae5b/build/while/while-tmp/OutputInterpreter.o )
+
+src/OutputInterpreter.hs:109:83: Warning: Defined but not used: ‘y’
+Linking dist/dist-sandbox-f62dae5b/build/while/while ...
+Installing executable(s) in /home/akl84/cs360/hw6/.cabal-sandbox/bin

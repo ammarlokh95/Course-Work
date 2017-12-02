@@ -1,0 +1,22 @@
+<project>
+
+	<target name='run' depends='compile'>
+		<java classname='PhoneDict'>
+			<classpath path='./'/>
+			<arg value=""/>
+		</java>
+	</target>
+
+	<target name='compile'>
+		<javac srcdir='.' includes='PhoneDict.java' includeantruntime='false'/>
+	</target>
+	
+	<target name='clean'>
+		<delete>
+			<fileset dir='./'>
+				<include name='*.class'/>
+			</fileset>
+		</delete>
+	</target>
+
+</project>

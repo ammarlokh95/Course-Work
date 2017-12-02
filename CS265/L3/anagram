@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -z sign.c ]; then
+if [ -z squash.awk ]]; then
+	 exit
+	fi
+fi
+gcc -osign sign.c
+
+./sign < /usr/share/dict/words | sort | awk -f squash.awk > out
+
+awk '{ print NF " " $0}' < out | sort -n |tail
+
+

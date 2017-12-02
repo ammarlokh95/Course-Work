@@ -1,0 +1,13 @@
+#!/bin/bash
+#to organise music based on artists
+
+for f in *.mp3
+do
+	if [[ $f == *-* ]]; then
+		mkdir ${f/ - */}
+		echo "were in here"
+		mv "$f" "${f/ - */}/${f/* - /}"	
+	else echo "artist of $f not found"
+	fi
+done 
+exit

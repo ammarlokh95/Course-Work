@@ -1,0 +1,188 @@
+
+
+Lab 1:
+Q1. 
+.bash_profile is invoked as the login shell and .bashrc is invoked when bash
+is run as an interactive shell.
+
+Q3.      
+total 52
+-rw-rw-r-- 1 akl84 akl84  8059 Sep 27 19:33 funny
+-rwxrwxr-x 1 akl84 akl84   240 Sep 27 19:34 hello.bash
+-rw-rw-r-- 1 akl84 akl84  2946 Sep 27 18:22 $MYVIMRC
+-rw-rw-r-- 1 akl84 akl84 33733 Sep 27 18:33 vi_lab
+
+Q4.
+chmod 644 file_name 
+User: Read, write
+group: read
+other: read
+
+Q5.
+chmod 755 file_name
+User: read, write, eecute
+group: read, execute
+other: read, execute
+
+Q6.
+Yes.
+
+Q7.
+Yes.
+
+Q8.
+No.
+
+Q9.
+a) by changing the users permissions granted to either (1, 3, 5, 7) using
+chmod. Eg chmod 744 hello.bash
+b) by adding execute permission to user: chmod u+x hello.bash.
+
+Q10.
+Gives warning saying ""readonly" is set(add '!' to override)". The warning
+can be overridden by adding an '!' after the save command. The changes were
+saved.
+
+Q11.
+
+a)ls *
+annoy
+annoy.cc
+funny
+hello.bash
+itemList
+itemlist-2cols
+lab1
+$MYVIMRC
+TelecomsTruths
+UnitTestingPhase
+vi_lab
+
+b)ls a*
+annoy
+annoy.cc
+
+c)ls *m*
+itemList
+itemlist-2cols
+TelecomsTruths
+
+d)ls anno?
+annoy
+
+e)ls annoy?
+ls: cannot access annoy?: No such file or directory
+
+Q12.
+new file called "a" and "space" were created.
+
+Q13.
+a) echo Is a < b
+/bin/bash: b: No such file or directory
+
+b) echo "Is a < b?"
+Is a < b?
+
+c) echo "\$USER is $USER"
+$USER is akl84
+
+d) echo '\$USER is $USER"
+\$USER is $USER
+
+e) echo "today is 'date'"
+today is 'date'
+
+f) echo "today is $(date)"
+today is Sun Sep 27 22:56:03 EDT 2015
+
+g) echo 'Today is 'date''
+Today is date
+
+h) echo -e "Files that start w/e:\n'ls e*'"
+Files that start w/e:
+'ls e*'
+
+Q14.
+Sort itemList-2cols sorts based according to the first value of each item,
+whereas, sort -n itemList-2cols sorts acording to the value of the entire
+string of the input. 
+sort itemList-2cols:
+10 chess
+10 photo
+11 flashlight
+15 incense
+16 window
+24 papers
+28 thermometer
+34 chair
+36 cd
+43 Othello
+45 bag
+45 cat
+47 radio
+48 plant
+4 laptop
+51 lamp
+54 book
+54 glass
+61 plant
+69 phone
+7 bottle
+7 speaker
+82 knife
+88 computer
+88 pillow
+89 guitar
+96 candle
+
+sort -n itemList-2cols
+4 laptop
+7 bottle
+7 speaker
+10 chess
+10 photo
+11 flashlight
+15 incense
+16 window
+24 papers
+28 thermometer
+34 chair
+36 cd
+43 Othello
+45 bag
+45 cat
+47 radio
+48 plant
+51 lamp
+54 book
+54 glass
+61 plant
+69 phone
+82 knife
+88 computer
+88 pillow
+89 guitar
+95 candle
+
+Q15. 
+sort -n -r itemList-2cols | head -n 8
+95 candle
+89 guitar
+88 pillow
+88 computer
+82 knife
+69 phone
+61 plant
+55 glass
+
+Q16.
+it place of the tar file there is lab1.tar.gz
+
+Q17.
+lab1.tgz became lab1.tar
+
+Q18.
+grep -r -l -i "vacation" ~kschmidt/public_html/CS265/Labs/Unix
+
+Q19. 
+find . -name "lab1"

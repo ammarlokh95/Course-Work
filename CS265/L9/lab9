@@ -1,0 +1,24 @@
+Q1.1
+It displayed "segmentation fault (core dumped)" and created a file called
+"core".
+
+Q1.2
+It bombed at the function call to __strcmp_sse2_unaligned() (strcmp()) in
+fuction inTable().
+
+Q1.3
+a. scanf() should take address of n and the main() function expects an int to be returned. Fixed by adding return
+0;
+b.
+output:pi=1 n=3.1415  
+double pi should take "%f" while int n should correspound to "%d". Also,
+main expects an int return type.
+c. st[0] was null because the first input went into st[1].
+d. use assert call as an if contition and display suitable message like
+"invalid input" if the assertion fails.
+e. 
+
+Q1.4
+qsort does not crash but it does not sort the array
+Q1.5
+Sementation dump occurs and the program crashes.

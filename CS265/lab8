@@ -1,0 +1,37 @@
+Q 1.1 
+i. It means to hide the details of the working of the interface from the
+user so the user does not need to worry about the interfaces logic.
+ii. A small number of concepts should be combined in a smal number of ways
+to get the desired output
+iii. Be cleaer about what each method is doing, and dont make changes
+without the users knowledge
+iv. Use the same concepts and logic to do a certain function everywhere
+throughout the interface.
+
+Q 1.2
+Does not display empty fields within quotes
+Does not check if the ',' is within quotes
+fields cannot be greater that 200 chars.
+cannot be more that 20 fields.
+Input line is not preserved
+No data is saved from one input line to next
+Fields are accessible globally.
+
+Q1.3
+No limit to number of fields and size of each field
+Displays empty fiels inside quotes
+Displays entire line within quote even if ',' is included
+Q 1.4
+line is not preserved
+No data is saved from one input line to next
+Fields are accessible globally.
+No we cannot pass 2 files because the loop will stop when the first file
+reaches null.
+Q 1.5
+Fields are no longer accessible globally.
+but No data is saved from one input line to next.
+Q1.6
+Yes it does.
+
+
+

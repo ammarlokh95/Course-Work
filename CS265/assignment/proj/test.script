@@ -1,0 +1,70 @@
+#!/bin/bash
+make clean
+make build
+#running purchace before init
+./assn4 purchase 38 = 0 0 0 2
+#output:
+#exit:4
+
+#running change before init
+./assn4 change 5 = 0 1
+#output:
+#exit:4
+
+#running report before init
+./assn4 report
+#output:
+#exit:4
+
+#till = 10 1$ bills and 1 5$ bill
+./assn4 init 15 = 10 1 
+#output:
+#exit:0
+ 
+#initialize till with negtive amount
+./assn4 init -15 = -10 -1 0 0
+#output:0
+#exit:1
+
+#initialize till with unequal amounts on both side
+./assn4 init 10 = 5 0 1
+#output:
+#exit:2
+
+#Purchase $38 with two $20s:
+./assn4 purchase 32 = 0 0 0 2
+#output:3 1 0 0
+#exit:0
+
+#purchase 15$ with 1 20$
+./assn4 purchase 12 = 0 0 0 1
+#output:
+#exit:3 
+
+#change a five for 5 ones
+./assn4 change 0 1 = 5
+#output: 5 0 0 0
+#exit: 0
+
+#change a 20 for a 10, five and five ones, with insufficient denomination
+./assn4 change 0 0 0 1 = 5 1 1 0
+#output: 
+#exit:3
+#change with unequal amt tendered and bills requested
+./assn4 change 0 0 1 0 = 0 1 0 0
+#output:
+#exit:3
+
+#report contents of till
+./assn4 report
+#output: 32 : 47 = 2 1 0 2  
+#exit:0
+
+#report called with garbage arguments
+./assn4 report 131
+#output:
+#exit:1
+
+./assn4 init 50 = 10 8
+#output:
+#exit:0

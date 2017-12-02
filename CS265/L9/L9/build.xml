@@ -1,0 +1,51 @@
+<project name="JUnitExample" default="test">
+
+    <target name="compileTest">
+        <javac includeantruntime="false" srcdir="." destdir=".">
+            <classpath>
+                <fileset dir="/usr/share/java">
+                    <include name="junit4.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="test" depends="compileTest">
+        <junit fork="true" showoutput="true" enabletestlistenerevents="true">
+            <classpath>
+                <pathelement path="."/>
+                <fileset dir="/usr/share/java">
+                    <include name="junit4.jar"/>
+                </fileset>
+            </classpath>
+            <test name="gIntTest" haltonfailure="no">
+                <formatter type="plain" usefile="false"/>
+            </test>
+        </junit>
+    </target>
+	<target name="compile">
+		<javac includeantruntime="false" srcdir="." destdir=".">
+			<classpath>
+			<fileset dir="/usr/share/java">
+				<include name="gInt.java"/>
+			</fileset>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="run" depends="compile">
+		<java classname="gInt">
+			<classpath path='./'/>
+			<arg value=""/>
+		</java>
+	</target>
+
+    <target name="clean">
+        <delete>
+            <fileset dir=".">
+                <include name="*.class"/>
+            </fileset>
+        </delete>
+    </target>
+
+</project>

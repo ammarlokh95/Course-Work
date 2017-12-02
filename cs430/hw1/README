@@ -1,0 +1,14 @@
+AMMAR LOKHANDWALA
+cs430
+
+Assignment 1
+
+The program works using the DDA algorithm to draw lines.
+The function names should be self explanatory.
+All of the sample files are working perfectly.
+
+Compile:
+	g++ STD=c++11 -o hw1 hw1.cpp
+Run: 
+	./hw1 -f [FILENAME]
+

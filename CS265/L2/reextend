@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#To accept two file extensions and to change the first into the second for
+#all files in the current working directory
+
+if [[ -z $1 ]]; then
+	echo "Incorrect arguments"
+	exit
+fi
+
+if [[ -z $2 ]]; then	
+	echo "incorrect arguments"
+exit
+fi
+
+for f in *
+	do
+		mv $f ${f/$1/$2}
+	done
+exit
+
+		

@@ -1,0 +1,36 @@
+Configuring hw7-1.0...
+Building hw7-1.0...
+Preprocessing executable 'fsm' for hw7-1.0...
+[ 1 of 13] Compiling Fixpoint         ( src/Fixpoint.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/Fixpoint.o )
+[ 2 of 13] Compiling Set              ( src/Set.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/Set.o )
+[ 3 of 13] Compiling Parser           ( src/Parser.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/Parser.o )
+[ 4 of 13] Compiling Nfa              ( src/Nfa.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/Nfa.o )
+[ 5 of 13] Compiling NfaMatch         ( src/NfaMatch.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/NfaMatch.o )
+[ 6 of 13] Compiling NfaToDot         ( src/NfaToDot.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/NfaToDot.o )
+[ 7 of 13] Compiling NfaToDfa         ( src/NfaToDfa.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/NfaToDfa.o )
+[ 8 of 13] Compiling MinimizeDfa      ( src/MinimizeDfa.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/MinimizeDfa.o )
+[ 9 of 13] Compiling DfaToC           ( src/DfaToC.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/DfaToC.o )
+[10 of 13] Compiling RegExp           ( src/RegExp.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/RegExp.o )
+[11 of 13] Compiling RegExpMatch      ( src/RegExpMatch.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/RegExpMatch.o )
+[12 of 13] Compiling RegExpToNfa      ( src/RegExpToNfa.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/RegExpToNfa.o )
+[13 of 13] Compiling Main             ( src/Main.hs, dist/dist-sandbox-657fa742/build/fsm/fsm-tmp/Main.o )
+Linking dist/dist-sandbox-657fa742/build/fsm/fsm ...
+Preprocessing executable 'test' for hw7-1.0...
+
+src/Test.hs:5:8:
+    Could not find module ‘Test.Framework’
+    There are files missing in the ‘test-framework-0.8.1.1’ package,
+    try running 'ghc-pkg check'.
+    Use -v to see a list of the files searched for.
+
+src/Test.hs:6:8:
+    Could not find module ‘Test.Framework.Providers.HUnit’
+    There are files missing in the ‘test-framework-hunit-0.3.0.2’ package,
+    try running 'ghc-pkg check'.
+    Use -v to see a list of the files searched for.
+
+src/Test.hs:7:8:
+    Could not find module ‘Test.HUnit’
+    There are files missing in the ‘HUnit-1.3.0.0’ package,
+    try running 'ghc-pkg check'.
+    Use -v to see a list of the files searched for.
