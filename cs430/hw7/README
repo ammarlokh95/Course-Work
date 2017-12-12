@@ -1,0 +1,28 @@
+AMMAR LOKHANDWALA
+
+cs430
+Assignment 7
+
+3D Depth
+
+Added and motified previous methods to enable scanfilling, z-buffering and depth cueing.
+The test files work to an extent but the shapes are blotchy and test 3 isn't working. Ther is something wrong with my z-Interpolation.
+I have done everything correctly to the best of my knowledge, there may be some small things I've over looked for things to look this way.
+
+The program gets the x points on the edges, then calculates xa,xb, za, zb fo the current scan line.
+It then calculates z, however, for many points, z is coming out to be larger than it should (out of range).
+I tried calculating z with the cononical values of x and y for that particular point but that was even worse (almost nothing displayed).
+The scan line works fine when all the z buffering (and hence depth cuing, as depth cueing needs z). 
+Depth cueing seems to be working (works well when the back range is set to -1 to accomodate the errors in z calculation or when z is set to a vertice value)
+
+Compile:
+	g++ -std=c++11 -o hw7 hw7.cpp
+
+Run: 
+	./hw7 -f [FILENAME] ... (other commands)
+
+
+A make file is included with the following functions:
+compile : compiles the program
+test : runs scripts for all the test cases given in assignment pdf.
+clean : deletes all .xpm files in the current folder
